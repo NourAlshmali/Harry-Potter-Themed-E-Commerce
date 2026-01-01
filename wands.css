@@ -1,0 +1,348 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #eee; 
+    background:#10141b; 
+    overflow-x: hidden; 
+      font-family: harry;
+    letter-spacing: 2px;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+    color: #FFD700; 
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wands-hero-section {
+    background-image: url('assets/wands/slider.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 70vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+ 
+}
+
+.hero-content-wands h1 {
+    font-size: 4.5em;
+    margin-bottom: 10px;
+    color: white ; 
+    letter-spacing: 2px;
+}
+
+.hero-content-wands h2 {
+    font-size: 2.8em; 
+    color: white; 
+    font-weight: normal;
+}
+
+
+.wands-products {
+    padding: 50px 0;
+     background-image: linear-gradient(180deg, #15111d, #323657 121.35%); 
+    min-height: 100vh;
+}
+
+.wands-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 40px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.wand-card {
+    background-color: transparent; 
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wand-card .card-border {
+    background-image: url('assets/wands/ground.jpg'); 
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    padding: 30px; 
+    border-radius: 10px;
+    min-height: 450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #3e2723; 
+}
+
+
+.wand-card img {
+    max-width: 150px; 
+    height: auto;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5)); 
+}
+
+.wand-card h3 {
+  
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #6d4c41; 
+}
+
+.wand-card .description {
+   
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1; 
+}
+
+
+.buy-now-btn {
+    background-color:#553731 ;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 1px;
+   
+
+}
+
+.buy-now-btn:hover {
+    background-color: #967d34; 
+    transform: translateY(-2px); 
+}
+
+
+@media (max-width: 768px) {
+    .hero-content-wands h1 {
+        font-size: 3em;
+    }
+    .hero-content-wands h2 {
+        font-size: 2em;
+    }
+    .wands-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .wand-card .card-border {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content-wands h1 {
+        font-size: 2.5em;
+    }
+    .hero-content-wands h2 {
+        font-size: 1.5em;
+    }
+    .wands-container {
+        grid-template-columns: 1fr; /* كارد واحد في العمود  */
+    }
+    .wand-card .card-border {
+        padding: 20px;
+        min-height: 380px;
+    }
+    .wand-card h3 {
+        font-size: 1.5em;
+    }
+    .wand-card .description {
+        font-size: 1em;
+    }
+    .wand-card .price {
+        font-size: 1.3em;
+    }
+    .buy-now-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+footer {
+    background-color:var(--background-color);
+    padding: 50px 0;
+    color: var(--text-color);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.links {
+   width: 150px;
+}
+
+.links h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+
+.footer-logo img {
+    height: 100px; 
+    margin-left: auto;
+    display: block;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.footer-info {
+    max-width: 70%;
+    padding-top: 100px;
+}
+
+.footer-info p {
+    font-size: 15px;
+    color: var(--text-color);
+    line-height: 1.6;
+   
+}
+
+.footer-info a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.social-icons a {
+    color: var(--text-color);
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--text-color);
+}
+.footer-links h4{
+    color: white;
+}
+    @font-face {
+    font-family: harry;
+    src: url(./assets/font/HARRYP__.TTF);
+  }
+
+
+@media (max-width: 768px) {
+    .hero-content-wands h1 {
+        font-size: 3em;
+    }
+    .hero-content-wands h2 {
+        font-size: 2em;
+    }
+    .wands-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .wand-card .card-border {
+        min-height: 400px;
+    }
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .footer-info {
+        max-width: 100%;
+        padding-top: 20px;
+    }
+    .footer-logo {
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero-content-wands h1 {
+        font-size: 2.5em;
+    }
+    .hero-content-wands h2 {
+        font-size: 1.5em;
+    }
+    .wands-container {
+        grid-template-columns: 1fr;
+    }
+    .wand-card .card-border {
+        padding: 20px;
+        min-height: 380px;
+    }
+    .wand-card h3 {
+        font-size: 1.5em;
+    }
+    .wand-card .description {
+        font-size: 1em;
+    }
+    .buy-now-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    .footer-links {
+        gap: 20px;
+    }
+    .links {
+        width: 100%;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+}
+

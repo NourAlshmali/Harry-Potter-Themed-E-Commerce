@@ -1,0 +1,211 @@
+/* General Styles */
+:root {
+    --text-color: #f0f0f0;
+    --input-bg: rgba(255, 255, 255, 0.1);
+    --input-border: 1px solid rgba(255, 255, 255, 0.2);
+    --button-bg: #4a90e2;
+    --button-hover: #5d9ee7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-family: harry;
+    letter-spacing: 2px;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/login/signup.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.signup-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background: var(--input-bg);
+    border: var(--input-border);
+    border-radius: 5px;
+    color: var(--text-color);
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px var(--button-bg);
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
+
+.remember-me a {
+    color: var(--button-bg);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.remember-me a:hover {
+    color: var(--button-hover);
+    text-decoration: underline;
+}
+
+.signup-btn-link {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--button-bg);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-btn-link:hover {
+    background-color: var(--button-hover);
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.login-link a {
+    color: var(--button-bg);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.login-link a:hover {
+    color: var(--button-hover);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .signup-box {
+        padding: 30px 20px;
+        max-width: 90%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .input-group label {
+        font-size: 0.8rem;
+    }
+
+    .input-group input {
+        font-size: 0.9rem;
+    }
+
+    .signup-btn {
+        font-size: 1rem;
+    }
+}
+ @font-face {
+    font-family: harry;
+    src: url(./assets/font/HARRYP__.TTF);
+  }

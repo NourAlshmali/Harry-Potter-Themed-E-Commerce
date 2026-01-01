@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Harry Potter Shop </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Henny+Penny&family=Lora:ital,wght@0,400..700;1,400..700&family=Mountains+of+Christmas:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="background-audio" src="assets/audio/harry potter music.mp3" loop></audio>
+    
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <div class="nav-center">
+            <div class="image-container">
+                <img src="assets/imges/logo.png" alt="Harry Potter Logo" class="main-image">
+                <span class="sparkle sparkle-1"></span>
+                <span class="sparkle sparkle-2"></span>
+                <span class="sparkle sparkle-3"></span>
+                <span class="sparkle sparkle-4"></span>
+                <span class="sparkle sparkle-5"></span>
+                <span class="sparkle sparkle-6"></span>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <input type="text" placeholder="Search.." class="search">
+            <div class="log-sign">
+                <a href="login.html" class="log-in-btn">Log In</a>
+                <a href="signup.html" class="sign-up-btn">Sign Up</a>
+                <button id="audio-control-btn" class="audio-btn">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p>
+                Ready for an adventure? Our Harry Potter shop has everything you need to experience the magic of Hogwarts. From figures and collectibles to clothing and accessories, every item is specially designed to transport you to the wizarding world.
+            </p>
+        </div>
+    </section>
+
+    <section class="product">
+        <img src="assets/imges/stars.png" class="img1">
+        <img src="assets/imges/horizons_village.png" class="img2">
+        
+        <div class="left">
+            <img src="assets/imges/snitch.gif" alt="" class="snitch">
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/imges/magic wands.jpeg" alt="">
+                    <a href="wands.html">
+                        <div class="box">
+                        Magic Wands
+                    </div>
+                    </a>
+                    <p>
+                        Choose your wand, let the adventure begin.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="assets/imges/clothes.jpeg" alt="">
+                   <a href="clothes.html">
+                     <div class="box">
+                        clothes
+                    </div>
+                   </a>
+                    <p>
+                        Dress like a wizard, declare your loyalty.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/imges/Harry Potter Series_.jpeg" alt="">
+                    <a href="Novels.html">
+                        <div class="box">
+                            Novels
+                        </div>
+                    </a> 
+                    <p>
+                        Return to the enchanting world of Hogwarts
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="assets/imges/Exclusive Harry Potter stuff.jpg" alt="">
+                    <a href="Exclusive.html">
+                        <div class="box">
+                        Exclusive  stuff 
+                    </div>
+                    </a>
+                    <p>
+                        Exclusive collectibles for the most passionate wizards
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="border-container">
+                <div class="poll-container">
+                    <img src="assets/imges/border.png" alt="" class="border-image">
+                    <h2> What is your favorite magic product?</h2>
+                    <form id="poll-form">
+                        <label>
+                            magic wands 
+                            <input type="radio" name="HP" value="magic wands" required> 
+                        </label>
+                        <label>
+                            clothes
+                            <input type="radio" name="HP" value="clothes"> 
+                        </label>
+                        <label>
+                            Exclusive stuff
+                            <input type="radio" name="HP" value="Exclusive stuff"> 
+                        </label>
+                        <label>
+                            Novels 
+                            <input type="radio" name="HP" value="Novels"> 
+                        </label>
+                        <button type="submit">Vote now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="houses">
+        <img src="assets/imges/stars.png" alt="" class="img1">
+        <img src="assets/imges/horizons_train.png " class="img2-h">
+        <h1>
+            What's Your
+            Hogwarts House?
+        </h1>
+        <div class="content-wrapper">
+        </div>
+        <div class="flags">
+            <a href="gryffindor.html"> <img src="assets/imges/greffindor.png" class="gryffindor-flag"> </a>
+            <a href="reveclow.html"> <img src="assets/imges/revenclow.png" class="ravenclaw-flag"> </a>
+            <a href="hufflepuff.html"> <img src="assets/imges/hafelpuf.png" class="hufflepuff-flag"> </a> 
+            <a href="slythren.html"> <img src="assets/imges/slythren.png" class="slytherin-flag"> </a> 
+        </div>
+        <img src="assets/imges/foft print.gif" alt="" class="foot-print">
+        <img src="assets/imges/harry-hat.gif" alt=""class="harry-hat">
+    </section>
+
+    <section class="footer">
+        <footer>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <div class="links">
+                        <h4>Manage Preferences</h4>
+                        <ul>
+                            <li>Press</li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h4>FAQs</h4>
+                        <ul>
+                            <li>Terms & Conditions</li>
+                            <li>Ad Choices</li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h4>Privacy & Cookies</h4>
+                        <ul>
+                            <li>Children's Privacy Policy</li>
+                            <li>Legals</li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h4>Starting Harry Potter</h4>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="assets/imges/logo.png" alt="Harry Potter Logo">
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-info">
+                        <p> WIZARDING WORLD DIGITAL 2025</p>
+                        <p>Looking for Wizarding World? is the official home of Harry Potter, Fantastic Beasts, and the Wizarding World, formerly known as Pottermore.</p>
+                        <p>Brought to you by Wizarding World Digital and its parent company Warner Bros. Entertainment Inc., delivering the latest news and official products from the Wizarding World and our partners.</p>
+                        <p>All characters and elements Warner Bros. Entertainment Inc. Publishing Rights  J.K. Rowling.</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        const audio = document.getElementById('background-audio');
+        const audioControlBtn = document.getElementById('audio-control-btn');
+
+        audioControlBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                audioControlBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+            } else {
+                audio.pause();
+                audioControlBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+            }
+        });
+    </script>
+
+</body>
+</html>
